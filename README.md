@@ -1136,10 +1136,10 @@ sleepRandom(5).then(result => {
   console.log(result);                 // => 202, after 10 sec.
 }).then(() => {
   console.log('immediately after');    // => immediately after
-  throw Error('Irror!');
+  throw Error('Error!');
 }).then(() => {
   console.log('will not be displayed');
-}).catch(x => console.log(x));         // => => Error: Irror!
+}).catch(x => console.log(x));         // => => Error: Error!
 ```
 `Promise.resolve` and `Promise.reject` [*example*](http://goo.gl/vr8TN3):
 ```js
